@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-05 09:24:15.628651",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "issue_details_section",
+  "subject",
+  "description",
+  "additional_information_section",
+  "additional_comments",
+  "ticket_details_section",
+  "on_behalf_of",
+  "case_origin",
+  "priority",
+  "column_break_10",
+  "status",
+  "assigned_to",
+  "type",
+  "more_details_section",
+  "investigationroot_cause_analysis",
+  "required_resolution_actions",
+  "incident_resolutiondisposition",
+  "verification_section",
+  "verification_comments",
+  "description_information_section",
+  "internal_comments",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "additional_comments",
+   "fieldtype": "Text Editor",
+   "label": "Additional Comments",
+   "max_height": "200px"
+  },
+  {
+   "fieldname": "on_behalf_of",
+   "fieldtype": "Link",
+   "label": "On Behalf Of",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nOpen\nIn Progress\nOn Hold\nResolved\nClosed"
+  },
+  {
+   "fieldname": "case_origin",
+   "fieldtype": "Select",
+   "label": "Case Origin",
+   "options": "Email\nPhone\nOther"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned To",
+   "options": "User"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "High\nMedium\nLow\nCritical"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Problem\nQuestion\nFeedback\nRequest"
+  },
+  {
+   "fieldname": "investigationroot_cause_analysis",
+   "fieldtype": "Text Editor",
+   "label": "Investigation/Root Cause Analysis",
+   "max_height": "150px"
+  },
+  {
+   "fieldname": "required_resolution_actions",
+   "fieldtype": "Text Editor",
+   "label": "Required Resolution Action(s)",
+   "max_height": "150px"
+  },
+  {
+   "fieldname": "incident_resolutiondisposition",
+   "fieldtype": "Text Editor",
+   "label": "Incident Resolution/Disposition",
+   "max_height": "150px"
+  },
+  {
+   "fieldname": "verification_comments",
+   "fieldtype": "Text Editor",
+   "label": "Verification Comments",
+   "max_height": "200px"
+  },
+  {
+   "fieldname": "internal_comments",
+   "fieldtype": "Small Text",
+   "label": "Internal Comments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Support Ticket",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "issue_details_section",
+   "fieldtype": "Section Break",
+   "label": "Issue Details"
+  },
+  {
+   "fieldname": "additional_information_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "ticket_details_section",
+   "fieldtype": "Section Break",
+   "label": "Ticket Details"
+  },
+  {
+   "fieldname": "more_details_section",
+   "fieldtype": "Section Break",
+   "label": "More Details"
+  },
+  {
+   "fieldname": "verification_section",
+   "fieldtype": "Section Break",
+   "label": "Verification"
+  },
+  {
+   "fieldname": "description_information_section",
+   "fieldtype": "Section Break",
+   "label": "Description Information"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-05 12:09:29.873741",
+ "modified_by": "Administrator",
+ "module": "C2N - Service Desk",
+ "name": "Support Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
